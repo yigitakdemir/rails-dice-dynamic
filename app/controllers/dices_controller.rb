@@ -10,7 +10,7 @@ class DicesController < ApplicationController
     @rolls = []
 
     @num_dice.times do
-      die = rand(1..6)
+      die = rand(1..@sides)
 
       @rolls.push(die)
     end    
